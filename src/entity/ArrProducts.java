@@ -271,11 +271,11 @@ public class ArrProducts {
         }
     }
 
+
     // Thông kê số sản pham theo danh mục
     public void statisticProductInCategory(ArrCategories arrCategories) {
         Categories[] categories = arrCategories.getCategories();
         int[] numberProducts = new int[arrCategories.getSize()];
-        int count = 0;
 
         for(int i = 0; i < sizeProduct; i++){
             int categoryId = products[i].getCategoryId();
@@ -294,6 +294,7 @@ public class ArrProducts {
         }
     }
 
+
     // Validate trùng id
     public boolean duplicateProductId(String productId) {
         for (int i = 0; i < sizeProduct; i++) {
@@ -303,6 +304,7 @@ public class ArrProducts {
         }
         return false;
     }
+
 
     // Validate trùng tên sản phẩm
     public boolean duplicateProductName(String productName) {
